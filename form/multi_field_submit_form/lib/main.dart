@@ -50,7 +50,7 @@ class MyCustomFormState extends State<MyCustomForm> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextFormField(
-            // The validator receives the text that the user has entered.
+            decoration: const InputDecoration(label: Text('Telephone')),
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';
