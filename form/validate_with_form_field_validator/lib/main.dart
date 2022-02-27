@@ -52,8 +52,9 @@ class MyCustomFormState extends State<MyCustomForm> {
         children: [
           TextFormField(
               // The validator receives the text that the user has entered.
-              validator:
-                  RequiredValidator(errorText: 'กรุณากรอกหมายเลขโทรศัพท์')),
+              validator: PatternValidator(r'^(0)(\d-?){9}$',
+                  errorText:
+                      'กรุณากรอกหมายเลขโทรศัพท์จำนวน 10 หลักซึ่งขึ้นต้นด้วย 0 - (0XXXXXXXXX) หรือ (0XX-XXX-XXXX) เท่านั้น')),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(

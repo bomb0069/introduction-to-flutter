@@ -24,3 +24,7 @@ reference -> [Installing form_field_validator](https://pub.dev/packages/form_fie
 dependencies:
   form_field_validator: ^1.1.0
 ```
+
+## Example of Validator
+
+[Unit Test](https://github.com/Milad-Akarie/form_field_validator/blob/master/test/form_field_validator_test.dart)
