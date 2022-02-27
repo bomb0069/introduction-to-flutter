@@ -1,16 +1,24 @@
-# validate_with_form_field_validator
+# Validate Form with form_field_validator
 
-A new Flutter project.
+## Install 
 
-## Getting Started
+```shell
+$flutter pub add form_field_validator
 
-This project is a starting point for a Flutter application.
+Resolving dependencies...
++ form_field_validator 1.1.0
++ intl 0.17.0
+  material_color_utilities 0.1.3 (0.1.4 available)
+  path 1.8.0 (1.8.1 available)
+  source_span 1.8.1 (1.8.2 available)
+  test_api 0.4.8 (0.4.9 available)
+  vector_math 2.1.1 (2.1.2 available)
+Changed 2 dependencies!
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Dependency
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+dependencies:
+  form_field_validator: ^1.1.0
+```
