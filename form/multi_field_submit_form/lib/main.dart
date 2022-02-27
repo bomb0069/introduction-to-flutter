@@ -42,6 +42,7 @@ class MyCustomFormState extends State<MyCustomForm> {
   // not a GlobalKey<MyCustomFormState>.
   final _formKey = GlobalKey<FormState>();
   final _telephone = TextEditingController();
+  final _password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -70,6 +71,8 @@ class MyCustomFormState extends State<MyCustomForm> {
           TextFormField(
             decoration: const InputDecoration(label: Text('Password')),
             obscureText: true,
+            controller: _password,
+            onFieldSubmitted: (value) => _submitForm(value),
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';
@@ -93,6 +96,7 @@ class MyCustomFormState extends State<MyCustomForm> {
 
   _submitForm(String value) {
     print('Telephone : ${_telephone.text}');
+    print('Password : ${_password.text}');
     // Validate returns true if the form is valid, or false otherwise.
     if (_formKey.currentState!.validate()) {
       // If the form is valid, display a snackbar. In the real world,
