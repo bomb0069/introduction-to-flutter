@@ -52,7 +52,8 @@ class MyCustomFormState extends State<MyCustomForm> {
         children: [
           TextFormField(
               // The validator receives the text that the user has entered.
-              validator: ValidationBuilder().build()),
+              validator:
+                  ValidationBuilder(requiredMessage: 'กรุณากรอกชื่อ').build()),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
