@@ -58,6 +58,16 @@ class MyCustomFormState extends State<MyCustomForm> {
               return null;
             },
           ),
+          TextFormField(
+            decoration: const InputDecoration(label: Text('Password')),
+            obscureText: true,
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
