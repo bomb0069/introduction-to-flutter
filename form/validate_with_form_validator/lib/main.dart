@@ -54,7 +54,8 @@ class MyCustomFormState extends State<MyCustomForm> {
               // The validator receives the text that the user has entered.
               validator: ValidationBuilder(
                       requiredMessage: 'กรุณากรอก หมายเลขโทรศัพท์')
-                  .phone('กรุณากรอกหมายเลขโทรศัพท์ที่ถูก Format เท่านั้น')
+                  .regExp(RegExp(r'^(0)(\d-?){9}$'),
+                      'กรุณากรอกหมายเลขโทรศัพท์จำนวน 10 หลักซึ่งขึ้นต้นด้วย 0 - (0XXXXXXXXX) หรือ (0XX-XXX-XXXX) เท่านั้น')
                   .build()),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
