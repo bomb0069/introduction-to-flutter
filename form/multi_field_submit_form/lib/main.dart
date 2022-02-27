@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(const MyApp());
 
@@ -51,6 +52,10 @@ class MyCustomFormState extends State<MyCustomForm> {
         children: [
           TextFormField(
             decoration: const InputDecoration(label: Text('Telephone')),
+            keyboardType: TextInputType.number,
+            inputFormatters: <TextInputFormatter>[
+              FilteringTextInputFormatter.digitsOnly
+            ],
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';
