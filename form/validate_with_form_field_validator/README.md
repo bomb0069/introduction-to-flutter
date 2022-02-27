@@ -28,3 +28,7 @@ dependencies:
 ## Example of Validator
 
 [Unit Test](https://github.com/Milad-Akarie/form_field_validator/blob/master/test/form_field_validator_test.dart)
+
+## MultipleValidator
+
+[Multi rules validation](https://github.com/Milad-Akarie/form_field_validator#multi-rules-validation)
